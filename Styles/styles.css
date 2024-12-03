@@ -10,6 +10,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+.card-Header{
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
 .profile-Container {
   width: 90%;
   height: 545px;
@@ -74,6 +81,8 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .play-Container {
   height: 250px;
@@ -90,6 +99,8 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .study-Container {
   height: 250px;
@@ -106,6 +117,8 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .exercise-Container {
   height: 250px;
@@ -121,6 +134,8 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .social-Container {
   height: 250px;
@@ -136,6 +151,8 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 .self-Container {
   height: 250px;
@@ -151,12 +168,42 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
+.circle1{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: rgb(128, 94, 215);
+}
+.circle2{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: rgb(128, 94, 215);
+}
+.circle3{
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: rgb(128, 94, 215);
+}
+.circle-Group{
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+
+
+
 @media (max-width: 800px) {
   .main-Grid {
     grid-template-columns: .5fr .5fr;
     grid-row: .5fr .5fr .5fr .5fr .5fr .5fr;
-    /* gap:10px; */
   }
   .play-Container {
     grid-column: 1/2;
