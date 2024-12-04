@@ -10,12 +10,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.card-Header{
-    color: white;
-    padding-top: 20px;
-    padding-left: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 100;
+.card-Header {
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
 }
 .profile-Container {
   width: 90%;
@@ -23,7 +23,6 @@ body {
   background-color: rgb(12, 12, 65);
   border-radius: 5%;
   margin-top: 13%;
-  /* margin-left: 5%; */
   grid-row: 1/ 3;
   grid-column: 1/2;
 }
@@ -54,17 +53,29 @@ body {
   padding-left: 30px;
 }
 .optiontxt-1 {
-  color: white;
+  color: rgb(97, 130, 229);
   padding-top: 20px;
   padding-left: 38px;
+  transition: color 0.3s ease;
+}
+.optiontxt-1:hover {
+  color: white;
 }
 .optiontxt-2 {
-  color: white;
+  color: rgb(97, 130, 229);
   padding-left: 38px;
+  transition: color 0.3s ease;
+}
+.optiontxt-2:hover {
+  color: white;
 }
 .optiontxt-3 {
-  color: royalblue;
+  color: rgb(97, 130, 229);
   padding-left: 38px;
+  transition: color 0.3s ease;
+}
+.optiontxt-3:hover {
+  color: white;
 }
 .work-Container {
   height: 250px;
@@ -81,8 +92,14 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  transition: color 0.3s ease;
+}
+.work-Contents {
   display: flex;
   justify-content: space-between;
+}
+.work-Card:hover {
+  background-color: rgb(42, 42, 123);
 }
 .play-Container {
   height: 250px;
@@ -99,8 +116,14 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  transition: color 0.3s ease;
+}
+.play-Contents {
   display: flex;
   justify-content: space-between;
+}
+.play-Card:hover {
+  background-color: rgb(42, 42, 123);
 }
 .study-Container {
   height: 250px;
@@ -117,8 +140,14 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  transition: color 0.3s ease;
+}
+.study-Contents {
   display: flex;
   justify-content: space-between;
+}
+.study-Card:hover {
+  background-color: rgb(42, 42, 123);
 }
 .exercise-Container {
   height: 250px;
@@ -134,8 +163,14 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  transition: color 0.3s ease;
+}
+.exercise-Content {
   display: flex;
   justify-content: space-between;
+}
+.exercise-Card:hover {
+  background-color: rgb(42, 42, 123);
 }
 .social-Container {
   height: 250px;
@@ -151,8 +186,14 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  transition: color 0.3s ease;
+}
+.social-Content {
   display: flex;
   justify-content: space-between;
+}
+.social-Card:hover {
+  background-color: rgb(42, 42, 123);
 }
 .self-Container {
   height: 250px;
@@ -168,48 +209,69 @@ body {
   width: 100%;
   border-radius: 8%;
   margin-top: 50px;
+  transition: color 0.3s ease;
+}
+.self-Content {
   display: flex;
   justify-content: space-between;
 }
-.circle1{
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
-    background-color: rgb(128, 94, 215);
+.hours-Text {
+  color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 60px;
 }
-.circle2{
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
-    background-color: rgb(128, 94, 215);
+.weeks-Text {
+  color: rgb(148, 123, 211);
+  padding-left: 23px;
+  font-size: 12px;
 }
-.circle3{
-    height: 5px;
-    width: 5px;
-    border-radius: 100%;
-    background-color: rgb(128, 94, 215);
+.self-Card:hover {
+  background-color: rgb(42, 42, 123);
 }
-.circle-Group{
-    display: flex;
-    justify-content: center;
-    gap: 2px;
-    padding-top: 30px;
-    padding-right: 20px;
+.circle1 {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background-color: rgb(128, 94, 215);
 }
-
-
-
+.circle2 {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background-color: rgb(128, 94, 215);
+}
+.circle3 {
+  height: 5px;
+  width: 5px;
+  border-radius: 100%;
+  background-color: rgb(128, 94, 215);
+}
+.circle-Group {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+.hours {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}
 
 @media (max-width: 800px) {
   .main-Grid {
-    grid-template-columns: .5fr .5fr;
-    grid-row: .5fr .5fr .5fr .5fr .5fr .5fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-row: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
   }
   .play-Container {
     grid-column: 1/2;
     grid-row: 3;
-    }
-  .study-Container{
+  }
+  .study-Container {
     grid-column: 2/3;
     grid-row: 3;
   }
@@ -217,8 +279,95 @@ body {
     grid-column: 1/2;
     grid-row: 4;
   }
-  .self-Container{
+  .self-Container {
     grid-column: 2/3;
     grid-row: 4;
+  }
+}
+@media (max-width: 425px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-row: repeat(7/ 1.5f);
+    justify-content: center;
+    padding: 0;
+  }
+  .profile-Container {
+    grid-column: 1/3;
+    grid-row: 1;
+    height: 180px;
+    width: 100%;
+    background-color: brown;
+  }
+  .profile-Card {
+    height: 130px;
+    width: 100%;
+    background-color: aqua;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .profile-Pic {
+    width: 80px;
+    border: solid white 3px;
+    margin-left: 15px;
+    margin-top: 20px;
+    /* margin: 0; */
+  }
+  .report-Text {
+    font-size: 15px;
+    /* padding: 0; */
+    margin: 0;
+  }
+  .jeremy-Name {
+    font-size: 20px;
+    padding: 0;
+  }
+  .robson-Name {
+    font-size: 20px;
+    padding: 0;
+  }
+  .option-Container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-top: 10px;
+  }
+  .optiontxt-1 {
+    margin: 0;
+    padding: 0;
+  }
+  .work-Container {
+    grid-column: 1/2;
+    grid-row: 2;
+    margin: 0;
+  }
+  .play-Container {
+    grid-column: 1/2;
+    grid-row: 3;
+    margin: 0;
+  }
+  .study-Container {
+    grid-column: 1/2;
+    grid-row: 4;
+    padding: 0;
+    margin: 0;
+  }
+  .exercise-Container {
+    grid-column: 1/2;
+    grid-row: 5;
+  }
+  .social-Container {
+    grid-column: 1/2;
+    grid-row: 6;
+  }
+  .self-Container {
+    grid-column: 1/2;
+    grid-row: 7;
+  }
+  .name-Container{
+   /* padding-top: px; */
+   padding-right: 30px;
+display: flex;
+justify-content: center;
+/* margin-right: 40px; */
   }
 }
